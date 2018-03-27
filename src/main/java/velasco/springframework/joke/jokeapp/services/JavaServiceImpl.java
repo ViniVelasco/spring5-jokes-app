@@ -8,8 +8,8 @@ public class JavaServiceImpl implements JokeService {
 
     private final ChuckNorrisQuotes chuckNorrisQuotes; //https://mvnrepository.com/artifact/guru.springframework/chuck-norris-for-actuator/0.0.2
 
-    public JavaServiceImpl() {
-        this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+    public JavaServiceImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
+        this.chuckNorrisQuotes = chuckNorrisQuotes;
     }
 
     @Override
